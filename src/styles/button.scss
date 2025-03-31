@@ -1,0 +1,17 @@
+.button{
+  width: 280px;
+  height: 50px;
+  background-color: rgba(32, 96, 246, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 15px;
+  line-height: 100%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+
+  @include on-tablet{
+    width: 264px;
+  }
+}

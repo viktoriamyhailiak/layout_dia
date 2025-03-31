@@ -1,0 +1,19 @@
+.nav{
+
+  &__list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 48px;
+  }
+
+  &__link{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+}

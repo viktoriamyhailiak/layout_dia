@@ -1,0 +1,37 @@
+.top-bar{
+  padding-block: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 1/-1;
+
+  @include on-small-desktop{
+    padding-block: 48px;
+  }
+
+  &__logo-and-list{
+    display: flex;
+    align-items: center;
+    gap: 136px;
+
+    // @include on-large-desktop{
+    //   gap: 251px;
+    // }
+  }
+
+  &__icons{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__hire-us{
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(32, 96, 246, 1);
+  }
+}

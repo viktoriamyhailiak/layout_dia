@@ -1,0 +1,21 @@
+.icon{
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+
+  &--logo{
+    background-image: url(/src/images/logo/air-logo.svg);
+    width: 46px;
+    height: 28px;
+  }
+
+  &--menu{
+    background-image: url(/src/images/menu-icon.svg);
+
+    @include on-small-desktop{
+      display: none;
+    }
+  }
+}
