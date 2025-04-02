@@ -5,6 +5,10 @@
     padding: 0;
     display: flex;
     gap: 48px;
+
+    &--menu{
+      flex-direction: column;
+    }
   }
 
   &__link{

@@ -1,0 +1,17 @@
+.title{
+  font-weight: 600;
+  font-family: Poppins, serif;
+  color: rgba(37, 55, 87, 1);
+  font-size: 32px;
+
+  &--our-expertise{
+    font-size: 44px;
+    line-height: 120%;
+    text-align: center;
+
+    @include on-tablet{
+      font-size: 52px;
+      line-height: 150%;
+    }
+  }
+}

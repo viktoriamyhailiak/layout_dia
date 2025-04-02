@@ -9,18 +9,21 @@
 
     padding-bottom: 438px;
 
-
     @include on-tablet{
-      padding-bottom: 147px;
+      padding-bottom: 537px;
     }
 
     @include on-small-desktop{
-      padding-bottom: 205px;
+      padding-bottom: 215px;
+    }
+
+    @include on-large-desktop{
+      padding-bottom: 173px;
     }
   }
 
   &__top-bar{
-    margin-bottom: 12px;
+    margin-bottom: 28px;
 
     @include on-tablet{
       margin-bottom: 36px;
@@ -60,11 +63,17 @@
 
     @include on-tablet{
       margin-bottom: 56px;
+      grid-column: 1/5;
     }
 
     @include on-small-desktop{
       margin-bottom: 83px;
       grid-column: 1/6;
+    }
+
+    @include on-large-desktop{
+      grid-column: 1/5;
+      height: 81px;
     }
   }
 

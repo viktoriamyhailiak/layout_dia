@@ -23,6 +23,12 @@
   }
 }
 
+@mixin on-large-screens{
+  @media (min-width: 2560px) {
+   @content
+  }
+}
+
 @mixin padding-inline{
   padding-inline: 20px;
 

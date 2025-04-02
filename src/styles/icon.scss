@@ -18,4 +18,16 @@
       display: none;
     }
   }
+
+  &--close{
+    background-image: url(/src/images/close-icon.svg);
+    width: 18px;
+    height: 18px;
+  }
+
+  &--arrow{
+    background-image: url(/src/images/right-arrow.svg);
+    width: 48px;
+    height: 48px;
+  }
 }
