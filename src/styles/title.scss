@@ -3,6 +3,7 @@
   font-family: Poppins, serif;
   color: rgba(37, 55, 87, 1);
   font-size: 32px;
+  line-height: 150%;
 
   &--our-expertise{
     font-size: 44px;
@@ -13,5 +14,15 @@
       font-size: 52px;
       line-height: 150%;
     }
+  }
+
+  &--grey{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 100%;
+    color: rgba(192, 205, 215, 1);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: left;
   }
 }

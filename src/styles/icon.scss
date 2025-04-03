@@ -30,4 +30,32 @@
     width: 48px;
     height: 48px;
   }
+
+  &--commas{
+    background-image: url(/src/images/commas.svg);
+    margin-inline: auto;
+    margin-bottom: 8px;
+
+    @include on-tablet{
+      margin-bottom: 16px;
+    }
+  }
+
+  &--rectangle{
+    background-image: url(/src/images/rectangle.svg);
+    width: 85px;
+    height: 109px;
+    position: absolute;
+    z-index: 0;
+  }
+
+  &--rectangle-up{
+    top: 5px;
+    left: 30px;
+  }
+
+  &--rectangle-down{
+    bottom: 11px;
+    right: 30px;
+  }
 }
