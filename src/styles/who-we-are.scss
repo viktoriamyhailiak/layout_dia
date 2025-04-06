@@ -1,31 +1,33 @@
-.who-we-are{
-  @include page-grid;
+.who-we-are {
+  &__content {
+    @include page-grid;
 
-  text-align: center;
-  row-gap: 24px;
+    text-align: center;
+    row-gap: 24px;
 
-  @include on-tablet{
-    row-gap: 16px;
+    @include on-tablet {
+      row-gap: 16px;
+    }
   }
 
-  &__title{
+  &__title {
     grid-column: 1/-1;
   }
 
-  &__description{
+  &__description {
     grid-column: 1/-1;
     font-size: 22px;
     line-height: 150%;
 
-    @include on-tablet{
+    @include on-tablet {
       font-size: 24px;
     }
 
-    @include on-small-desktop{
+    @include on-small-desktop {
       grid-column: 2/-2;
     }
 
-    @include on-large-desktop{
+    @include on-large-desktop {
       grid-column: 3/11;
     }
   }

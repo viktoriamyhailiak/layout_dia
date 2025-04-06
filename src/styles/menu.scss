@@ -1,13 +1,13 @@
-.menu{
-  background-color: rgba(44, 44, 44, 1);
-  color: rgba(255, 255, 255, 1);
+.menu {
+  background-color: $footer-bg;
+  color: $main-white;
   height: 100vh;
 
-  &__content{
+  &__content {
     @include page-grid;
   }
 
-  &__nav{
+  &__nav {
     grid-column: 1/-1;
     margin-top: 60px;
   }

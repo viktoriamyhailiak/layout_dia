@@ -1,88 +1,114 @@
-.testimonials{
-  @include page-grid;
+.testimonials {
+  &__content {
+    @include page-grid;
 
-  text-align: center;
+    text-align: center;
+  }
 
-  &__title-top{
+  &__title-top {
     grid-column: 1/-1;
     margin-bottom: 16px;
   }
 
-  &__title{
+  &__title {
     grid-column: 1/-1;
+    text-align: left;
 
-    @include on-tablet{
+    @include on-tablet {
       grid-column: 1/5;
-      text-align: left;
     }
   }
 
-  &__comments{
+  &__comments {
     display: flex;
     flex-direction: column;
     gap: 30px;
     grid-column: 1/-1;
     margin-top: 48px;
+    margin-inline: auto;
 
-    @include on-tablet{
+    @include on-tablet {
       margin-top: 56px;
+    }
+
+    @include on-small-desktop {
+      margin-top: 85px;
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    @include on-large-desktop {
+      gap: 30px;
     }
   }
 
-  &__comment{
-    padding: 42px 32px;
-    background-color: white;
+  &__comment {
+    padding: 32px 42px;
+    background-color: $main-white;
     border-radius: 16px;
     width: 280px;
     box-sizing: border-box;
 
-    @include on-tablet{
+    @include hover(scale, 1.1);
+
+    @include on-tablet {
       width: 558px;
       padding-inline: 98px;
     }
+
+    @include on-small-desktop {
+      width: 292px;
+      padding-inline: 45px;
+    }
+
+    @include on-large-desktop {
+      width: 362px;
+      padding-inline: 56px;
+    }
   }
 
-  &__comment-description{
+  &__comment-description {
     margin-bottom: 32px;
 
-    @include on-tablet{
+    &--small-margin {
+      margin-bottom: 16px;
+    }
+
+    @include on-tablet {
+      margin-bottom: 16px;
+    }
+
+    @include on-small-desktop {
+      margin-bottom: 32px;
+    }
+
+    @include on-large-desktop {
       margin-bottom: 16px;
     }
   }
 
-  &__comment-author{
+  &__comment-author {
     margin-bottom: 4px;
-    color: rgba(37, 55, 87, 1);
+    color: $black-grey-color;
   }
 
-  &__comment-logo{
+  &__comment-company {
+    text-align: center;
+  }
+
+  &__comment-logo {
+    width: 196px;
+    height: 196px;
     margin-bottom: 24px;
-  }
 
-  &__comment-photo{
-    width: 110px;
-    height: 110px;
-    padding-block: 40px;
-    display: block;
-    position: relative;
-    z-index: 1;
-
-    &::after{
-      position: absolute;
-      display: block;
-      content: ' ';
-      background-color: rgba(32, 96, 246, 1);
-      width: 109px;
-      height: 44px;
-      z-index: 0;
-      top: -10px;
-      left: -20px;
-      transform: rotate(-60deg);
-    }
-
-    @include on-tablet{
+    @include on-tablet {
       width: 250px;
       height: 250px;
+    }
+
+    @include on-small-desktop {
+      width: 196px;
+      height: 196px;
     }
   }
 }
