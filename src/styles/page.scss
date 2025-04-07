@@ -26,11 +26,14 @@
     z-index: 3;
     pointer-events: none;
     opacity: 0;
+    transition: transform 300ms;
+    transform: translateX(-100%);
   }
 
   &:has(.page__menu:target) .page__menu {
     pointer-events: all;
     opacity: 1;
+    transform: translateX(0);
   }
 
   &:has(.page__menu:target) {
